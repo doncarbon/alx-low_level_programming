@@ -11,8 +11,9 @@ n = 0;
 
 while (n < 10)
 {
-printf(n);
+putchar(n);
 n++;
 }
+ putchar('\n');
 return (0);
 }
