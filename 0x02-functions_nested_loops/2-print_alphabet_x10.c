@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - prints the alphabets in lowercase
+ * print_alphabet_x10 - prints the alphabets in lowercase
  * Return: Always 0 (Success)
  */
 
@@ -16,7 +16,7 @@ for (i = 0; i < 10; i++)
 {
 for (a = 'a'; a <= 'z'; a++)
 {
-printf("%c", a);
 }
+printf("%c", a);
 }
 }
