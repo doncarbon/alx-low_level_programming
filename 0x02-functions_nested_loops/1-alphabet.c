@@ -16,9 +16,3 @@ for (a = 'a'; a <= 'z'; a++)
 printf("%c", a);
 }
 }
-
-int main(void)
-{
-print_alphabet();
-return (0);
-}
