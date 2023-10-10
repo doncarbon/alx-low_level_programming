@@ -1,6 +1,7 @@
 #ifndef main_h
 #define main_h
 
+void times_table(void);
 void jack_bauer(void);
 int print_last_digit(int);
 int _abs(int);
