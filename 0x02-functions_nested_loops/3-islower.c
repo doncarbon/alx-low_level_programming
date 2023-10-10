@@ -3,12 +3,12 @@
 
 /**
  * _islower - checks for lowercase character
+ * @c: the character to check
  * Return: Always 0 (Success)
  */
 
 int _islower(int c)
 {
-char c;
 if (c > 32)
 {
 return (1);
