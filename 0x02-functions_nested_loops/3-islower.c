@@ -11,10 +11,10 @@ int _islower(int c)
 char c;
 if (c > 32)
 {
-printf("%d", 1);
+return (1);
 }
 else
 {
-printf("%d", 0);
+return (0);
 }
 }

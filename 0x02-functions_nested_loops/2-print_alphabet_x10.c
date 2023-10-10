@@ -16,7 +16,8 @@ for (i = 0; i < 10; i++)
 {
 for (a = 'a'; a <= 'z'; a++)
 {
-}
 printf("%c", a);
+}
+printf("\n");
 }
 }
