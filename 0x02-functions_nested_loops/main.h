@@ -1,6 +1,7 @@
 #ifndef main_h
 #define main_h
 
+void jack_bauer(void);
 int print_last_digit(int);
 int _abs(int);
 int _putchar(char c);
