@@ -3,6 +3,7 @@
 
 /**
  * print_line - draws a straight line in the terminal.
+ * @n: the int to check
  */
 void print_line(int n)
 {
