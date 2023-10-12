@@ -5,15 +5,31 @@
  * print_diagonal - draws a diagonal line on the terminal.
  * @n: the number
  */
+
 void print_diagonal(int n)
 {
-int i;
+int i, t;
 
-for (i = 0; i < n; i++)
+if (n <= 0)
 {
-_putchar(i * ' ' + "\\");
 _putchar('\n');
 }
-
+else
+{
+for (i = 0; i < n; i++)
+{
+for (t = 0; t < n; t++)
+{
+if (t == i)
+{
+_putchar('\\');
+}
+else if (t < i)
+{
+_putchar(' ');
+}
+}
 _putchar('\n');
+}
+}
 }
