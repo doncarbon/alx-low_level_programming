@@ -15,22 +15,21 @@ a = i % 3;
 b = i % 5;
 if (a == 0 && b != 0)
 {
-_putchar('Fizz ');
+printf("Fizz ");
 }
 else if (b == 0 && a != 0)
 {
-_putchar('Buzz ');
+printf("Buzz ");
 }
 else if (a == 0 && b == 0)
 {
-_putchar('FizzBuzz ');
+printf("FizzBuzz ");
 }
 else
 {
-_putchar(i + '0');
-_putchar(' ');
+printf("%d ", i);
 }
 }
-_putchar('\n');
+printf("\n");
 return (0);
 }
