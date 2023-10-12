@@ -14,9 +14,9 @@ _putchar('\n');
 }
 else
 {
-for (i = 0; i < n; i++)
+for (i = 0; i < size; i++)
 {
-for (t = 0; t < n; t++)
+for (t = 0; t < size; t++)
 {
 _putchar('#');
 }
