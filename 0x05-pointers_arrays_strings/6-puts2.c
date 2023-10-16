@@ -15,10 +15,15 @@ void puts2(char *str)
 	{
 		if (i % 2 == 0)
 		{
-			(printf("%c", *str);
+			printf("%c", *str);
+			str++;
+			i++;
 		}
-		str++;
-		i++;
+		else
+		{
+			str++;
+			i++;
+		}
 	}
 	printf("\n");
 }
