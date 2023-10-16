@@ -9,10 +9,14 @@
  */
 void puts2(char *str)
 {
+	int i = 0;
+
 	while (*str != '\0')
 	{
-		printf("%c", *str);
+		if (i % 2 == 0)
+			(printf("%c", *str);
 		str++;
+		i++
 	}
 	printf("\n");
 }
