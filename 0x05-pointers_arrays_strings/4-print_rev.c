@@ -8,18 +8,15 @@
  */
 void print_rev(char *s)
 {
-	char *rs = s;
-	int i = 0;
+	int len = 0;
 
-	while (*s != '\0')
+	while (s[len] != '\0')
 	{
-		rs[i] = *s;
-		rs[(i + 1)] = rs[(i + 2)];
+		len++;
 	}
-	while (*rs != '\0')
+	for (int i = len - 1; i >= 0; i++)
 	{
-		printf("%c", *rs);
-		rs++;
+		printf("%c", s[i]);
 	}
 	printf("\n");
 }
