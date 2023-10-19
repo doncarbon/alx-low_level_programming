@@ -17,7 +17,7 @@ if (s1[i] > s2[i])
 {
 j++;
 }
-else if (s1[i] > s2[i])
+else if (s1[i] < s2[i])
 {
 j--;
 }
