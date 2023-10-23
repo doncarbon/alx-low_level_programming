@@ -1,6 +1,7 @@
 #ifndef main_h
 #define main_h
 
+char *_memset(char *s, char b, unsigned int n);
 void print_number(int n);
 char *rot13(char *);
 char *leet(char *);
