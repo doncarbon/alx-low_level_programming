@@ -11,26 +11,18 @@
  */
 char *_strchr(char *s, char c)
 {
-	int len = 0, i, fo = -1;
+	int a;
 
-	while (s[len] != '\0')
+	while (1)
 	{
-		len++;
-	}
-
-	for (i = 0; i < len; i++)
-	{
-		if (s[i] == c)
+		a = *s++;
+		if (a == c)
 		{
-			fo = i;
-			break;
+			return (s - 1);
+		}
+		if (a == 0)
+		{
+			return (NULL);
 		}
 	}
-
-	if (fo == -1)
-	{
-		return (NULL);
-	}
-
-	return (&s[fo]);
 }
