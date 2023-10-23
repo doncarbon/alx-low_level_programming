@@ -18,7 +18,7 @@ char *_strpbrk(char *s, char *accept)
 		l1++;
 	}
 
-	while (s[l2] != '\0')
+	while (*s != '\0')
 	{
 		l2++;
 	}
