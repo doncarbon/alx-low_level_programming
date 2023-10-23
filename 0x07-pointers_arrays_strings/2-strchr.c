@@ -7,7 +7,7 @@
  *
  * Return: pointer to the memory area s
  */
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	int len = 0, i, fo = -1, t = 0;
 	char temp[1000];
