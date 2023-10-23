@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_memset - fills memory with a constant byte
+ * *_memcpy - fills memory with a constant byte
  * @dest: destination string
  * @src: source string
  * @n: number of times
