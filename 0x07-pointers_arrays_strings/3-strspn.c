@@ -5,15 +5,15 @@
  * @s: memory area to be checked
  * @accept: char to check
  *
- * Return: the number of bytes in the initial segment of s
- * which consist only of bytes from accept
+ * Return: the number of bytes in the initial segment
+ * of s which consist only of bytes from accept
  */
 unsigned int _strspn(char *s, char *accept)
 {
 	int len = 0, is = 0, i, j;
 	unsigned int counter = 0;
 
-	while (accept[len] != '\n')
+	while (accept[len] != '\0')
 	{
 		len++;
 	}
