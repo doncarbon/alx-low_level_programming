@@ -9,25 +9,36 @@
  */
 char *_strchr(char *s, char c);
 {
-	int len, i, fo;
+	int len = 0, i, fo = -1, t = 0;
+	char temp[1000];
 
 	while (s[len] != '\0')
 	{
 		len++;
 	}
+
 	for (i = 0; i < len; i++)
 	{
-		if (s[i] = c)
+		if (s[i] == c)
 		{
 			fo = i;
 			break;
 		}
 	}
+
+	if (fo == -1)
+	{
+		return NULL;
+	}
+
 	while (fo < len)
 	{
 		temp[t] = s[fo];
 		t++;
 		fo++;
 	}
+
+	temp[t] = '\0';
+
 	return (temp);
 }
