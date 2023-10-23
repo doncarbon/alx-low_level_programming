@@ -28,7 +28,7 @@ char *_strchr(char *s, char c);
 
 	if (fo == -1)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	while (fo < len)
