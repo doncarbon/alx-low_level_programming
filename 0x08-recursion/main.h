@@ -1,6 +1,7 @@
 #ifndef main_h
 #define main_h
 
+void _puts_recursion(char *s);
 void set_string(char **s, char *to);
 void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
