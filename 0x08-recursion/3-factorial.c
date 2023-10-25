@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - returns the factorial of a given number.
+ * factorial - returns the factorial of a given number.
  * @n: number
- * 
+ *
  * Return: Factorial of a number, return -1 if n < 0
  */
 int factorial(int n)
