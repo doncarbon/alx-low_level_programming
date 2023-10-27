@@ -6,12 +6,12 @@
  * @str: string provided
  * Return: Always 0.
  */
-void _puts(char *str)
+void _puts(char *s)
 {
-	while (*str != '\0')
+	while (*s != '\0')
 	{
-		printf("%c", *str);
-		str++;
+		printf("%c", *s);
+		s++;
 	}
 	printf("\n");
 }
