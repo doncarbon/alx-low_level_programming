@@ -26,11 +26,14 @@ char *_strdup(char *str)
 		len++;
 	}
 
-	dp = (char *) malloc(sizeof(char) * len);
+	dp = malloc(sizeof(char) * (len + 1));
+
+	if (dp == NULL)
+		return (NULL);
 
 	while (i <= len)
 	{
-		*(dp + i) = str[i];
+		dp[i] = str[i];
 		i++;
 	}
 	*(dp + i) = '\0';
