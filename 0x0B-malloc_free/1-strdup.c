@@ -31,12 +31,10 @@ char *_strdup(char *str)
 	if (dp == NULL)
 		return (NULL);
 
-	while (i <= len)
+	while ((dp[i] = str[i]) != '\0')
 	{
-		dp[i] = str[i];
 		i++;
 	}
-	*(dp + i) = '\0';
 
 	return (dp);
 }
