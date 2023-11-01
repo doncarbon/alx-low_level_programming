@@ -1,6 +1,7 @@
 #ifndef FILE_MAIN
 #define FILE_MAIN
 
+void free_grid(int **grid, int height);
 char *create_array(unsigned int size, char c);
 int _putchar(char c);
 int _atoi(char *s);
