@@ -5,8 +5,6 @@
 #include <string.h>
 #include <stdio.h>
 
-int _putchar(char c);
-
 /**
  * struct listint_s - singly linked list
  * @n: integer
