@@ -13,6 +13,8 @@ int get_bit(unsigned long int n, unsigned int index)
 	int i;
 
 	bits = malloc(sizeof(char) * (index + 1));
+	if (bits == NULL)
+		return (-1);
 
 	bits[index + 1] = '\0';
 
@@ -29,6 +31,4 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	if (bits[index] == '0')
 		return (0);
-
-	return (-1);
 }
