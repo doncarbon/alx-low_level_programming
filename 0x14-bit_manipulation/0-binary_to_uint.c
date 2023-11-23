@@ -14,16 +14,10 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 		return (0);
 
-	while (b)
+	for (len = 0; b[len]; len++)
 	{
-		if (b[len] != '0' || b[len] != '1')
-		{
+		if (b[len] != '0' && b[len] != '1')
 			return (0);
-		}
-		else
-		{
-			len++;
-		}
 	}
 
 	for (index = 1, uint = 0, len--; len >= 0; len--, index *= 2)
