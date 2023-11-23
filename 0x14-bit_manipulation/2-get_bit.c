@@ -10,12 +10,14 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	char *bits;
-	int i;
+	int i, bit;
 
 	if (index >= sizeof(unsigned long int) * 8)
 		return (-1);
 
-	bits = malloc(sizeof(char) * (index + 1));
+	bits = malloc(index + 1);
+	if (bits == NULL)
+		return (-1);
 
 	bits[index + 1] = '\0';
 
@@ -27,9 +29,8 @@ int get_bit(unsigned long int n, unsigned int index)
 			bits[i] = '0';
 	}
 
-	if (bits[index] == '1')
-		return (1);
+	bit = bits[index] - '0';
+	free(bits);
 
-	if (bits[index] == '0')
-		return (0);
+	return (bit);
 }
