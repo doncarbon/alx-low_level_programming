@@ -24,6 +24,12 @@ int main(int argc, char *argv[])
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	error_file(file_from, file_to, argv);
 
+	if (chmod(argv[2], 0664) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't set permissions on %s\n", argv[2]);
+		exit(99);
+	}
+
 	nchars = 1024;
 	while (nchars == 1024)
 	{
