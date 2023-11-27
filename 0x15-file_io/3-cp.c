@@ -1,5 +1,4 @@
 #include "main.h"
-#include "cp.h"
 
 /**
  * error_file - checks if files can be opened.
