@@ -17,7 +17,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		dprintf(2, "Error: Can't malloc\n");
 		return (NULL);
 	}
-	
+
 	temp->prev = NULL;
 	temp->n = n;
 	temp->next = NULL;
