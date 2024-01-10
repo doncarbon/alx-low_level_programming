@@ -12,23 +12,16 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	dlistint_t *node;
 	unsigned int i;
 
-	node = malloc(sizeof(dlistint_t));
+	node = head
 	if (node == NULL)
 		return (NULL);
 
-	if (head != NULL)
-		while (head->prev != NULL)
-			head = head->prev;
-
-	if (head == NULL)
-		return (NULL);
+	if (node != NULL)
+		while (node->prev != NULL)
+			node = node->prev;
 
 	for (i = 0; i < index && head != NULL; i++)
 		head = head->next;
-
-	node->prev = head->prev;
-	node->n = head->n;
-	node->next = head->next;
 
 	return (node);
 }
