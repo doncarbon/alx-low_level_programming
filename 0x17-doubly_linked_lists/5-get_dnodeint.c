@@ -12,7 +12,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	dlistint_t *node;
 	unsigned int i;
 
-	node = head
+	node = head;
 	if (node == NULL)
 		return (NULL);
 
