@@ -6,6 +6,6 @@
  *
  * Return: nothing.
  */
-void srand(unsigned seed)
+void srand(unsigned int seed)
 {
 }
