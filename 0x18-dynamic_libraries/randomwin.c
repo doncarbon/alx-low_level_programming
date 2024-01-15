@@ -1,11 +1,14 @@
 #include <stdlib.h>
 
 /**
- * srand - This function does nothing.
- * @seed: a random value.
+ * rand - manipulate rand function.
  *
- * Return: nothing.
+ * Return: chosen winning numbers.
  */
-void srand(unsigned int seed)
+int rand(void)
 {
+	static int i = 0;
+	int numbers[6] = {9, 8, 10, 24, 75, 9};
+
+	return numbers[i++];
 }
