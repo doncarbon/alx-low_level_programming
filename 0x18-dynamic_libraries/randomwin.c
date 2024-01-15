@@ -7,8 +7,15 @@
  */
 int rand(void)
 {
-	static int i = 0;
-	int numbers[6] = {9, 8, 10, 24, 75, 9};
+	return (9);
+}
 
-	return numbers[i++];
+/**
+ * srand - nothing
+ * @seed: integer
+ *
+ * Return: nothing
+ */
+void srand(unsigned int seed)
+{
 }
