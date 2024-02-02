@@ -19,7 +19,7 @@ void hash_table_print(const hash_table_t *ht)
 	{
 		if (ht->array[i] != NULL)
 		{
-			if (iscomma = 1)
+			if (iscomma == 1)
 				printf(", ");
 
 			while (ht->array[i] != NULL)
@@ -30,7 +30,7 @@ void hash_table_print(const hash_table_t *ht)
 					printf(", ");
 			}
 
-			iscomma = 1
+			iscomma = 1;
 		}
 	}
 	printf("}\n");

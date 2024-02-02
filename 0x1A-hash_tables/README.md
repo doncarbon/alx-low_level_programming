@@ -4,4 +4,4 @@ Welcome to the 0x1A. C - Hash tables project! This project is part of the ALX So
 
 ## About the Author
 - **Name:** Hamza YASSINE
-- **ALX Software Engineering Student** 
+- **ALX Software Engineering Student**
